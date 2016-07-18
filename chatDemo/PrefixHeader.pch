@@ -1,0 +1,70 @@
+//
+//  PrefixHeader.pch
+//  chatDemo
+//
+//  Created by Li Bot on 2016/7/4.
+//  Copyright © 2016年 Li Bot. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "FirebaseProcess.h"
+#endif
+/*
+ For Firebase
+ */
+
+//chat room reference
+#define fkCHATROOMSREF @"ChatRooms"
+//key for caht room
+#define fkCHATROOMCREATEDATE @"CreateDate"
+#define fkCHATROOMCREATORID @"CreatorID"
+#define fkCHATROOMNAME @"Name"
+#define fkCHATROOMFAVORITEUSER @"FavoriteUsers"
+#define fkCHATROOMCURRENTUSER @"CurrentUsers"
+//end key for chat room
+
+//users reference
+#define fkUSERSREF @"Users"
+//key for users
+#define fkUSERNAME @"UserName"
+#define fkUSERPHOTOURL @"PhotoURL"
+#define fkUSERFOLLOWER @"FollowerUser"
+#define fkUSERFOLLOWEE @"FolloweeUser"
+//end key for users
+
+//messages reference
+#define fkMESSAGESREF @"Messages"
+//personal message reference
+#define fkPERSONALMESSAGESREF @"PersonalMessages"
+//key for message
+#define fkMESSAGEDATE @"Date"
+#define fkMESSAGETYPE @"MessageType"
+// [START not change]
+#define fkMESSAGETYPETEXT @"text"
+#define fkMESSAGETYPEPHOTO @"photo"
+#define fkMESSAGETYPEVIDEO @"video"
+#define fkMESSAGETYPEAUDIO @"audio"
+#define fkMESSAGETYPELOCATION @"location"
+// [END not change]
+#define fkMESSAGESTATUS @"Status"
+#define fkMESSAGESTATUSREAD @"Read"
+#define fkMESSAGESTATUSUNREAD @"Unread"
+#define fkMESSAGESENDERID @"SenderID"
+#define fkMESSAGESENDERDISPLAYNAME @"SenderDisplayName"
+#define fkMESSAGECONTENT @"Content"
+
+
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"
+
+#endif /* PrefixHeader_pch */
